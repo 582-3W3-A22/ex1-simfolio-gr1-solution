@@ -1,6 +1,8 @@
 <?php 
-$page = 'compte';
-include('inclusions/entete.inc.php'); 
+    // Identifiant de la page.
+    $page = 'compte';
+    // Inclure le fichier commun de l'entête du site.
+    include('inclusions/entete.inc.php'); 
 ?>
     <section class="principale">
         <form action="javascript: return false">
@@ -16,4 +18,7 @@ include('inclusions/entete.inc.php');
             </div>
         </form>
     </section>
-<?php include('inclusions/p2p.inc.php'); ?>
+<?php 
+    // Inclure le fichier commun du pied de page du site.
+    include('inclusions/p2p.inc.php'); 
+?>

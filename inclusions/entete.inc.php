@@ -1,12 +1,17 @@
 <?php
+// Variable dans laquelle on assigne le sigle de langue à utiliser pour
+// les textes du site : on suppose 'fr' est la langue par défaut ...
 $langue = 'fr';
+
+// ... mais si l'utilisateur clique un lien de choix de langue ...
 if(isset($_GET['langue'])) {
+    // ... on assigne alors ce choix à la variable.
     $langue = $_GET['langue'];
 }
+
+// On inclut les textes selon la langue.
 include("i18n/$langue/textes.php");
 ?>
-
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
